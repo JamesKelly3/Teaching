@@ -13,6 +13,23 @@ def add_some_numbers(number1, number2, number3):
 
 print(add_some_numbers(10, 11, 12))
 
+# You can also define what is called "recursive" functions, that means the function calls itself
+# A common example of this is defining a function to calculate the nth fibonacci number
+# (The fibonacci sequence is defined as every entry is the sum of the previous 2 entries)
+# e.g. [0, 1, 1, 2, 3, 5, 8, 13, 21, ....] and so on
+# If you look at e.g. the 21, we can see that 21 = 13 + 8 which are the two numbers before
+
+def fibonacci(n):
+    if n < 2:
+        # this catches the 0 and 1 that the sequence starts with
+        return n
+    else:
+        # to find the nth fibonacci number, you need to know the (n-1)th and (n-2)th
+        # to know the (n-2)th you need to know the (n-3)th and (n-4)th and so on until you reach 0 or 1
+        return fibonacci(n-1) + fibonacci(n-2)
+
+print(fibonacci(10))
+
 class Person:
     # This is __init__ also called the "constructor", it defines how to create a specific instance of the class,
     # and takes in any required data as arguments, in this case name, age and height are arguments
