@@ -20,7 +20,7 @@ boolean2 = False
 # True    True   | True
 
 # OR
-# A         B    | A and B
+# A         B    | A or B
 # -------------------------
 # False   False  | False
 # False   True   | True
