@@ -5,8 +5,34 @@ booleans are just True or False, they are how you do comparisons, and branch you
 boolean1 = True
 boolean2 = False
 
+# NOT
+
+# A      | not A
+# -----------------
+# False  | True
+# True   | False
+
+# AND
+# A         B    | A and B
+# -------------------------
+# False   False  | False
+# False   True   | False
+# True    False  | False
+# True    True   | True
+
+# OR
+# A         B    | A and B
+# -------------------------
+# False   False  | False
+# False   True   | True
+# True    False  | True
+# True    True   | True
+
+# incase that's not clear:
+# (False and False -> False, False and True -> True, True and False -> True, True and True -> True)
 and_them = boolean1 and boolean2
 or_them = boolean1 or boolean2
+not_boolean1 = not boolean1
 
 boolean_from_comparison = 1 < 100
 
@@ -40,11 +66,11 @@ else:
 
 a = True
 b = True
-c = True
+c = False
 d = False
 
 
-if a and b or c and d:
+if a and b or not c and d:
     print("YYY")
 else:
     print("ZZZ")
@@ -52,14 +78,14 @@ else:
 # the language does define an ordering for how this would be evaluated, however it can sometimes be tricky to work out
 # you can make it more clear how you want this to work with brackets
 
-if (a and (b or c)) and d:
+if (a and (b or not c)) and d:
     print("YYY")
 else:
     print("ZZZ")
 
 # or
 
-if (a and b) or (c and d):
+if (a and b) or not (c and d):
     print("YYY")
 else:
     print("ZZZ")
