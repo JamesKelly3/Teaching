@@ -6,13 +6,13 @@ boolean1 = True
 boolean2 = False
 
 # NOT
-# A      | not A
+#   A    | not A
 # -----------------
 # False  | True
 # True   | False
 
 # AND
-# A         B    | A and B
+#   A       B    | A and B
 # -------------------------
 # False   False  | False
 # False   True   | False
@@ -20,7 +20,7 @@ boolean2 = False
 # True    True   | True
 
 # OR
-# A         B    | A or B
+#   A       B    | A or B
 # -------------------------
 # False   False  | False
 # False   True   | True
