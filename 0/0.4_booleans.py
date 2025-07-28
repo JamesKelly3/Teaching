@@ -6,7 +6,6 @@ boolean1 = True
 boolean2 = False
 
 # NOT
-
 # A      | not A
 # -----------------
 # False  | True
