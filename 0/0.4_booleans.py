@@ -27,8 +27,7 @@ boolean2 = False
 # True    False  | True
 # True    True   | True
 
-# incase that's not clear:
-# (False and False -> False, False and True -> True, True and False -> True, True and True -> True)
+
 and_them = boolean1 and boolean2
 or_them = boolean1 or boolean2
 not_boolean1 = not boolean1
